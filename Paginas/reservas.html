@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/image/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/reservas.css">
+    <title>Sabor & Arte - Reservas</title>
+</head>
+
+<body>
+    <a href="../index.html">Voltar</a>
+
+    <h1 class="caprasimo-regular">Faça sua reserva aqui</h1>
+    <p class="text italico">Preencha os campos abaixo para realizar sua reserva</p>
+
+    <form action="../index.html">
+        <div>
+            <label class="text" for="campo-nome">Nome</label>
+            <input class="text campo" type="text" id="campo-nome" name="nome" required>
+        </div>
+        <div>
+            <label class="text" for="campo-telefone">Telefone/WhatsApp</label>
+            <input class="text campo" type="text" id="campo-telefone" name="telefone" minlength="1" maxlength="14">
+        </div>
+        <div>
+            <label class="text" for="campo-email">Email</label>
+            <input class="text campo" type="email" id="campo-email" name="email">
+        </div>
+        <div>
+            <label class="text" for="campo-data">Data da Reserva</label>
+            <input class="text campo" type="date" id="campo-data" name="data" required>
+        </div>
+        <div>
+            <label class="text" for="campo-hora">Horario</label>
+            <input class="text campo" type="text" id="campo-hora" name="hora" required>
+        </div>
+        <div>
+            <label class="text" for="campo-numero">Número de Pessoas</label>
+            <input class="text campo" type="number" id="campo-numero" name="numero" min="1" required>
+        </div>
+        <div>
+            <span class="text" style="display: block;">Observações</span>
+            <textarea class="text campo" name="observacoes" id="campo-observacoes"></textarea>
+        </div>
+        <div>
+            <span class="text" style="display: block;">Preferência de Ambiente</span>
+
+            <input class="text select" type="radio" value="interno" id="campo-preferencia-interno"
+                name="campo-preferencia">
+            <label class="text" for="campo-preferencia-interno">Interno</label>
+
+            <input class="text select" type="radio" value="externo" id="campo-preferencia-externo"
+                name="campo-preferencia">
+            <label class="text select" for="campo-preferencia-externo">Externo</label>
+
+            <input class="text select" type="radio" value="varanda" id="campo-preferencia-varanda"
+                name="campo-preferencia">
+            <label class="text" for="campo-preferencia-varanda">Varanda</label>
+        </div>
+
+        <button class="botao" type="submit">Confirmar Reserva</button>
+    </form>
+
+</body>
+
+</html>

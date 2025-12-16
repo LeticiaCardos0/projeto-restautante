@@ -1,0 +1,62 @@
+body {
+    background-color: #e7e5dc;
+    margin: 0px;
+    padding: 10px;
+}
+
+.caprasimo-regular {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.text {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.italico {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #e7e5dc;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    border:none;
+    border-radius: 8px;
+    background-color: #662222;
+}
+
+.campo {
+    margin: 3px;
+    background-color: #e7e5dc;
+    border-radius: 5px;
+}
+
+.botao {
+    color: #e7e5dc;
+    font-family: "Caprasimo", serif;
+    font-size: 17px;
+    border-style: solid;
+    border-color: #351212;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: #662222;
+    padding: 3px;
+    margin: 3px;
+    width: 130px;
+    height: 50px;
+
+}
+
+.select {
+    accent-color: #662222;
+    background-color: #e7e5dc;
+
+}
