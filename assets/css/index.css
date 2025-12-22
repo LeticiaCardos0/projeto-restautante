@@ -1,51 +1,88 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
+
 .navbar {
   background-color: #88272B;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  height: 100%;
+  background-color: #88272B;
+
 }
 
 .img-logo {
-  width: 90px;
+  width: 80px;
   padding-left: 20px;
+
 }
 
 
 .home {
   background-color: #88272B;
   text-decoration: none;
-  padding: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 
 .link {
-  padding: 10px;
-  font-family: "Jost", sans-serif;
+  margin-left: 10px;
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
   align-items: center;
   text-decoration: none;
-  color: #ffe8c3;
-  font-weight: bold;
-  font-size: 17px; 
+  color: #FBDDAA;
+  font-size: 17px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .link:hover {
-  color: #752427 ;
+  border-bottom: 3px solid#FBDDAA;
+}
 
+/*loc = indica que esta nessa pagina*/
+.loc {
+  border-bottom: 3px solid#FBDDAA;
+
+}
+
+.reserva {
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  border: none;
+  background-color: #662222;
+  padding: 3px;
+  margin: 3px;
+  width: 200px;
+  height: 55px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.text-botao {
+  text-decoration: none;
+  color: #FBDDAA;
+  font-size: 18px;
 }
 
 .titulo {
@@ -56,6 +93,7 @@ body{
   text-align: center;
 }
 
+/*Até aqui NAVBAR*/
 .texto {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
@@ -71,20 +109,53 @@ body{
 
 }
 
-
-.botao {
-  border: none;
-  background-color: #662222;
-  padding: 3px;
-  margin: 3px;
-  width: 200px;
-  height: 55px;
-  text-align: center;
-  border-radius: 15px;
+/*Apartir daqui footer*/
+.footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  background-color: #88272B;
+  font-family: "Jost", sans-serif;
+  color: #FBDDAA;
 }
 
-.text-botao {
-  text-decoration: none;
-  color: #e7e5dc;
-  font-size: 18px;
+.titulos-footer {
+  font-size: 25px;
+}
+
+.subtitulos-footer {
+  margin-bottom: 1px;
+}
+
+.itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.icon {
+  width: 20px;
+}
+
+.img-logo-footer {
+  width: 150px;
+
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+}
+
+.item-lista {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none;
 }
