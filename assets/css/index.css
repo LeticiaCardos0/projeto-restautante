@@ -83,16 +83,26 @@ body {
   text-decoration: none;
   color: #FBDDAA;
   font-size: 18px;
-}
-
-.titulo {
-  /*titulo e botao*/
   font-family: "Caprasimo", serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
 }
 
+.titulo {
+  color: #662222;
+  display: flex;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.subtitulo{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-indent: 1em;
+}
 /*Até aqui NAVBAR*/
 .texto {
   font-family: "Jost", sans-serif;
@@ -104,21 +114,37 @@ body {
 }
 
 .peq {
-  font-weight: bold;
   font-style: italic;
+}
 
+.nossa-loja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.imagens-loja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+.img-loja{
+  width: 250px;
+  border-radius: 15px;
 }
 
 /*Apartir daqui footer*/
 .footer {
   display: flex;
+  justify-content: center; 
   align-items: center;
-  align-content: center;
-  flex-direction: row;
   background-color: #88272B;
   font-family: "Jost", sans-serif;
   color: #FBDDAA;
 }
+
 
 .titulos-footer {
   font-size: 25px;
@@ -132,15 +158,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
+
+  max-width: 1200px; /* largura máxima */
+  width: 100%;
+  padding: 30px;
 }
+
+
+.item-lista {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
 
 .icon {
   width: 20px;
+  cursor: pointer;
 }
 
 .img-logo-footer {
-  width: 150px;
+  width: 170px;
 
 }
 
@@ -149,12 +188,6 @@ body {
   align-items: center;
 }
 
-.item-lista {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 10px;
-}
 
 li {
   list-style-type: none;
