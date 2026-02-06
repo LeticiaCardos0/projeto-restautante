@@ -188,6 +188,12 @@ body {
   align-items: center;
 }
 
+.link-footer {
+  text-decoration: none;
+  color: #FBDDAA
+;
+}
+
 
 li {
   list-style-type: none;
