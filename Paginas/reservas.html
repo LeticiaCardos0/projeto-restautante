@@ -15,58 +15,72 @@
 </head>
 
 <body>
-    <a href="../index.html">Voltar</a>
+    <div class="navbar">
+        <div class="logo">
+            <img class="img-logo" src="../assets/image/logo.ico">
+        </div>
 
-    <h1 class="caprasimo-regular">Faça sua reserva aqui</h1>
-    <p class="text italico">Preencha os campos abaixo para realizar sua reserva</p>
+        <div class="home">
+            <a class="link loc" href="../index.html">Home</a>
+            <a class="link" href="sobre.html">O Restaurante</a>
+            <a class="link" href="cardapio.html">Cardapio</a>
+            <a class="link" href="eventos.html">Eventos</a>
+            <a class="link" href="contato.html">Contato</a>
+        </div>
 
-    <form action="../index.html">
-        <div>
-            <label class="text" for="campo-nome">Nome</label>
-            <input class="text campo" type="text" id="campo-nome" name="nome" required>
+        <div class="botao-home">
+            <button id="formulario-reserva-home" class="botao ">Confirmar Reserva</button>
         </div>
-        <div>
-            <label class="text" for="campo-telefone">Telefone/WhatsApp</label>
-            <input class="text campo" type="text" id="campo-telefone" name="telefone" minlength="1" maxlength="14">
-        </div>
-        <div>
-            <label class="text" for="campo-email">Email</label>
-            <input class="text campo" type="email" id="campo-email" name="email">
-        </div>
-        <div>
-            <label class="text" for="campo-data">Data da Reserva</label>
-            <input class="text campo" type="date" id="campo-data" name="data" required>
-        </div>
-        <div>
-            <label class="text" for="campo-hora">Horario</label>
-            <input class="text campo" type="text" id="campo-hora" name="hora" required>
-        </div>
-        <div>
-            <label class="text" for="campo-numero">Número de Pessoas</label>
-            <input class="text campo" type="number" id="campo-numero" name="numero" min="1" required>
-        </div>
-        <div>
+    </div>
+    </div>
+
+    <div class="reserva">
+        <h1 class="caprasimo-regular">Faça sua reserva aqui</h1>
+        <p class="text italico">Preencha os campos abaixo para realizar sua reserva</p>
+        <div class="formulario">
+            <div>
+                <label class="text" for="campo-nome">Nome</label>
+                <input class="text campo" type="text" id="campo-nome" name="nome" required>
+            </div>
+            <div>
+                <label class="text" for="campo-telefone">Telefone/WhatsApp</label>
+                <input class="text campo" type="text" id="campo-telefone" name="telefone" minlength="1" maxlength="14">
+            </div>
+            <div>
+                <label class="text" for="campo-email">E-mail</label>
+                <input class="text campo" type="email" id="campo-email">
+            </div>
+            <div>
+                <label class="text" for="campo-data">Data da Reserva</label>
+                <input class="text campo" type="date" id="campo-data" required>
+            </div>
+            <div>
+                <label class="text" for="campo-hora">Horario</label>
+                <input class="text campo" type="time" id="campo-hora" required>
+            </div>
+            <div>
+                <label class="text" for="campo-numero">Número de Pessoas</label>
+                <input class="text campo" type="number" id="campo-numero" min="1" required>
+            </div>
+
+            <label class="text" for="campo-preferencia">Preferência de Ambiente</label>
+            <select class="select" id="campo-preferencia">
+                <option value="Interno">Interno</option>
+                <option value="Externo">Externo</option>
+                <option value="Varanda">Varanda</option>
+            </select>
+
             <span class="text" style="display: block;">Observações</span>
+
             <textarea class="text campo" name="observacoes" id="campo-observacoes"></textarea>
-        </div>
-        <div>
-            <span class="text" style="display: block;">Preferência de Ambiente</span>
 
-            <input class="text select" type="radio" value="interno" id="campo-preferencia-interno"
-                name="campo-preferencia">
-            <label class="text" for="campo-preferencia-interno">Interno</label>
-
-            <input class="text select" type="radio" value="externo" id="campo-preferencia-externo"
-                name="campo-preferencia">
-            <label class="text select" for="campo-preferencia-externo">Externo</label>
-
-            <input class="text select" type="radio" value="varanda" id="campo-preferencia-varanda"
-                name="campo-preferencia">
-            <label class="text" for="campo-preferencia-varanda">Varanda</label>
         </div>
 
-        <button class="botao" type="submit">Confirmar Reserva</button>
-    </form>
+        <button id="formulario-reserva" class="botao botao-reserva">Confirmar Reserva</button>
+    </div>
+    
+
+    <script src="../assets/js/reservas.js"></script>
 
 </body>
 

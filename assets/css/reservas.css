@@ -1,62 +1,283 @@
-body {
-    background-color: #e7e5dc;
-    margin: 0px;
-    padding: 10px;
+body{
+  padding: 0px;
+  margin: 0px;
 }
 
-.caprasimo-regular {
-    font-family: "Caprasimo", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+.navbar {
+  background-color: #88272B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
 }
 
-.text {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.italico {
-    font-style: italic;
+.img-logo {
+  width: 80px;
 }
 
-a {
-    text-decoration: none;
-    color: #e7e5dc;
-    font-family: "Jost", sans-serif;
-    font-weight: bold;
-    padding: 5px;
-    border:none;
-    border-radius: 8px;
-    background-color: #662222;
+.home {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.campo {
-    margin: 3px;
-    background-color: #e7e5dc;
-    border-radius: 5px;
+.link {
+  font-family: "Caprasimo", serif;
+  text-decoration: none;
+  color: #FBDDAA;
+  font-size: 17px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  border-bottom: 3px solid #FBDDAA;
+}
+
+.loc {
+  border-bottom: 3px solid #FBDDAA;
+}
+
+.botao-home {
+  display: flex;
+  align-items: center;
 }
 
 .botao {
-    color: #e7e5dc;
-    font-family: "Caprasimo", serif;
-    font-size: 17px;
-    border-style: solid;
-    border-color: #351212;
-    border-width: 1px;
-    border-radius: 8px;
-    background-color: #662222;
-    padding: 3px;
-    margin: 3px;
-    width: 130px;
-    height: 50px;
+  color: #FBDDAA;
+  font-family: "Caprasimo", serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  background-color: #662222;
+  padding: 8px 18px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.botao:hover {
+  background-color: #551919;
+}
+/*ATÉ AQUI NAVBAR*/
+
+.reserva {
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-reserva{
+  margin-top: 10px ;
+}
+
+
+.titulo {
+  color: #662222;
+  display: flex;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.subtitulo{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-indent: 1em;
+}
+/*Até aqui NAVBAR*/
+.texto {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-indent: 1em;
+  padding-left: 8px;
+  text-align: left;
+}
+
+.peq {
+  font-style: italic;
+}
+
+.nossa-loja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.imagens-loja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+.img-loja{
+  width: 250px;
+  border-radius: 15px;
+}
+
+/*Apartir daqui footer*/
+.footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #88272B;
+  font-family: "Jost", sans-serif;
+  color: #FBDDAA;
+}
+
+
+.titulos-footer {
+  font-size: 25px;
+}
+
+.subtitulos-footer {
+  margin-bottom: 1px;
+}
+
+.itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1200px; /* largura máxima */
+  width: 100%;
+  padding: 30px;
+}
+
+
+.item-lista {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+
+.icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.img-logo-footer {
+  width: 170px;
+
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: #FBDDAA
+;
+}
+
+
+li {
+  list-style-type: none;
+}
+.link {
+  font-family: "Caprasimo", serif;
+  text-decoration: none;
+  color: #FBDDAA;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.link:hover {
+  border-bottom: 3px solid #FBDDAA;
+}
+/*loc = indica que esta nessa pagina*/
+.loc {
+  border-bottom: 3px solid#FBDDAA;
+
+}
+.botao-home{
+  display: flex;
+  align-items: center;
+}
+
+
+.botao {
+  color: #FBDDAA;
+  font-family: "Caprasimo", serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  background-color: #662222;
+  padding: 8px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-botao {
+  text-decoration: none;
+  color: #FBDDAA;
+  font-size: 18px;
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+/*ATÉ AQUI NAVBAR*/
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.reserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.text {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+.italico {
+  font-style: italic;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.campo {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .select {
-    accent-color: #662222;
-    background-color: #e7e5dc;
-
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
 }
+

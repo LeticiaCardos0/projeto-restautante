@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +13,106 @@
     <link rel="shortcut icon" href="../assets/image/logo.ico" type="image/x-icon">
     <title>Sabor & Arte - Contato</title>
 </head>
-<body>
-    <div class="home">
-        <a class="link"href="../index.html">Home</a>
-        <a class="link"href="sobre.html">Sobre</a>
-        <a class="link"href="cardapio.html">Cardapio</a>
-        <a class="link"href="contato.html">Contato</a>
-    </div>
-    <h1>📞 Fale Conosco</h1>
 
-    <p>Quer fazer uma reserva, encomendar um prato especial ou tirar alguma dúvida?</p>
-    <p>Nossa equipe está pronta para te atender com carinho e agilidade</p>
-    <p>Entre em contato pelos nossos canais:</p>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img class="img-logo" src="../assets/image/logo.ico">
+        </div>
+
+        <div class="home">
+            <a class="link" href="../index.html">Home</a>
+            <a class="link" href="sobre.html">O Restaurante</a>
+            <a class="link" href="cardapio.html">Cardapio</a>
+            <a class="link" href="eventos.html">Eventos</a>
+            <a class="link loc" href="contato.html">Contato</a>
+        </div>
+
+        <div class="botao-home">
+            <a class="botao" href="reservas.html">Faça sua reserva</a>
+        </div>
+    </div>
     
-    <ul>
-        <li>
-            <p>Endereço: Rua das Palmeiras, 123 – Centro</p>
-        </li>
-        <li>
-            <p>Telefone/WhatsApp: (11) 99999-9999</p>
-        </li>
-        <li>
-            <p>E-mail: contato@saborearte.com.br</p>
-        </li>
-    </ul>
-    <p class="final">Será um prazer receber sua mensagem e ainda mais, ter você conosco para saborear o melhor da culinária brasileira!</p>
+    <h1 class="titulo">Fale Conosco</h1>
+    
+    <div class="container-formulario">
+        <div class="blocos">
+            <p class="texto">Quer fazer uma reserva, encomendar um prato especial ou tirar alguma dúvida?</p>
+            <p class="texto">Nossa equipe está pronta para te atender com carinho e agilidade</p>
+            <p class="texto">Entre em contato pelos nossos canais:</p>
+            <ul>
+                <li class="item-lista">
+                    <p class="texto">Endereço: Rua das Palmeiras, 123 – Centro</p>
+                </li>
+                <li class="item-lista">
+                    <p class="texto">Telefone/WhatsApp: (11) 99999-9999</p>
+                </li>
+                <li class="item-lista">
+                    <p class="texto">E-mail: contato@saborearte.com.br</p>
+                </li>
+            </ul>
+            <p class="final">Será um prazer receber sua mensagem e ainda mais, ter você conosco para saborear o melhor da
+                culinária brasileira!</p>
+        </div>
+        <div class="blocos">
+            <div class="bloco-formulario">
+               <h3 class="subtitulo ">Formulario de contato</h3>
+                    <div>
+                        <label class="texto" for="campo-telefone">Telefone</label>
+                        <input class="texto campo" type="text" id="campo-telefone">
+                    </div>
+                    <div>
+                        <label class="texto" for="campo">Nome</label>
+                        <input class="texto campo nome" type="text" id="campo-nome">
+                    </div>
+                    <div>
+                        <label class="texto" for="campo">E-mail</label>
+                        <input class="texto campo email" type="text" id="campo-email campo">
+                    </div>
+                        <label class="texto" for="campo-mensagem">Mensagem</label>
+                        <textarea class="texto campo" id="campo-mensagem"></textarea>
+                    <button id="form-mensagem" class="botao botao-formulario ">Enviar</button>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer">
+        <div class="itens">
+            <div class="horario">
+                <ul>
+                    <h1 class="titulos-footer">Horários de funcionamento</h1>
+                    <h3 class="subtitulos-footer"><img class="icon" src="../assets/image/icon-sol.png"
+                            alt="imagem sol">Almoço:</h3>
+                    <li class="item-lista">Terça à domingo a partir das 11:30</li>
+                    <h3 class="subtitulos-footer"><img class="icon" src="../assets/image/icon-lua.png" alt="imagem lua">
+                        Jantar:</h3>
+                    <li class="item-lista">Diariamente a partir das 18:00</li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img class="img-logo-footer" src="../assets/image/logo.ico" alt="logo">
+            </div>
+            <div class="item endereco-contatos">
+                <ul>
+                    <h1 class="titulos-footer">Localização e Contatos</h1>
+                    <a class="link-footer" href="https://maps.app.goo.gl/m9YaoYLWc5ZtpboP7">
+                        <li class="item-lista"><img class="icon" src="../assets/image/icon-loc.png"
+                                alt="icon pointer Localização">Rua das Palmeiras, 123 – Centro</li>
+                    </a>
+                    <a class="link-footer" href="https://www.whatsapp.com/?lang=pt">
+                        <li class="item-lista"><img class="icon" src="../assets/image/icon-telefone.png"
+                                alt="icon telefone">(47) 99999-9999</li>
+                    </a>
+                    <li class="item-lista"><img class="icon" src="../assets/image/icon-email.png"
+                            alt="icon email">contato@saborearte.com.br</li>
+                    <a class="link-footer" href="https://www.instagram.com/?lang=pt"">
+                        <li class=" item-lista"><img class="icon" src="../assets/image/icon-instagram.png"
+                            alt="icon email">saborearteoficial</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
