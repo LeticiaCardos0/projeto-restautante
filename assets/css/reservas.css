@@ -248,7 +248,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  justify-content: center;  
+  margin: 40px auto; /* centraliza horizontalmente */
+  background-color: #EAE8E0;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .text {
@@ -272,6 +278,14 @@ li {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  transition: 0.3s;
+  background-color: #fff;
+
+  
+}
+.campo:focus {
+  border-color: #88272B;
+  box-shadow: 0 0 5px rgba(136, 39, 43, 0.3);
 }
 
 .select {
@@ -279,5 +293,147 @@ li {
   font-weight: bold;
   border-radius: 5px;
   padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+
 }
+.select:focus {
+  border-color: #88272B;
+  box-shadow: 0 0 5px rgba(136, 39, 43, 0.3);
+}
+/*Responsividade apartir daqui */
+
+/* responsividade navbar*/
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .home {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .reserva {
+    padding-right: 0;
+  }
+
+  .img-logo {
+    width: 60px;
+  }
+
+  .botao {
+    padding: 6px 14px;
+    font-size: 15px;
+  }
+
+}
+
+/* footer*/
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .itens {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+  .itens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .img-logo-footer {
+    width: 130px;
+  }
+
+  .titulos-footer {
+    font-size: 20px;
+  }
+
+  .subtitulos-footer {
+    font-size: 15px;
+  }
+
+  .item-lista {
+    justify-content: center;
+  }
+
+  .endereco-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
+
+/* responsividade conteudo */
+
+/* Celular */
+@media (max-width: 768px) {
+
+  .nossa-loja {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .imagens-loja {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .img-loja {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .subtitulo,
+  .texto {
+    padding: 0 15px;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  .formulario {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .campo,
+  .select {
+    width: 100%;
+  }
+
+}
+
 

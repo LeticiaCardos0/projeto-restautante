@@ -189,3 +189,96 @@ body{
 li {
   list-style-type: none;
 }
+/*Responsividade apartir daqui */
+/* navbar*/
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .home {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .reserva {
+    padding-right: 0;
+  }
+
+  .img-logo {
+    width: 60px;
+  }
+
+  .botao {
+    padding: 6px 14px;
+    font-size: 15px;
+  }
+
+}
+
+
+/* footer*/
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .itens {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+  .itens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .img-logo-footer {
+    width: 130px;
+  }
+
+  .titulos-footer {
+    font-size: 20px;
+  }
+
+  .subtitulos-footer {
+    font-size: 15px;
+  }
+
+  .item-lista {
+    justify-content: center;
+  }
+
+  .endereco-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
